@@ -1,3 +1,6 @@
+package com.kafka.tutorial;
+
+
 import java.util.*;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.clients.consumer.ConsumerRecords;

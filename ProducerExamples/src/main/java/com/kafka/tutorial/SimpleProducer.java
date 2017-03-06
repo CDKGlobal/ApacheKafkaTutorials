@@ -1,4 +1,8 @@
+package com.kafka.tutorial;
+
 import java.util.*;
+import java.util.concurrent.Future;
+
 import org.apache.kafka.clients.producer.*;
 public class SimpleProducer {
   
@@ -14,9 +18,10 @@ public class SimpleProducer {
       props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 	        
       Producer<String, String> producer = new KafkaProducer <>(props);
-	
-	  ProducerRecord<String, String> record = new ProducerRecord<>(topicName,key,value);
-	  producer.send(record);	       
+
+      ProducerRecord<String, String> record = new ProducerRecord<>(topicName,key,value);
+      Future<RecordMetadata> future = producer.send(record);
+
       producer.close();
 	  
 	  System.out.println("SimpleProducer Completed.");

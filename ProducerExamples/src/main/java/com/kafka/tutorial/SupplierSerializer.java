@@ -1,6 +1,8 @@
+package com.kafka.tutorial;
+
 import org.apache.kafka.common.serialization.Serializer;
 import org.apache.kafka.common.errors.SerializationException;
-import java.io.UnsupportedEncodingException;
+
 import java.util.Map;
 import java.nio.ByteBuffer;
 

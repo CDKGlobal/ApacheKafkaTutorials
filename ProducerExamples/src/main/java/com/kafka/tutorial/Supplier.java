@@ -1,3 +1,5 @@
+package com.kafka.tutorial;
+
 import java.util.Date;
 public class Supplier{
         private int supplierId;

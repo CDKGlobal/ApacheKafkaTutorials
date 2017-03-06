@@ -1,3 +1,5 @@
+package com.kafka.tutorial;
+
 import java.util.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
